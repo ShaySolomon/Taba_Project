@@ -1,0 +1,257 @@
+﻿body {
+    font-family: Arial;
+    letter-spacing: 1px;
+    color:white;
+}
+
+#background {
+    position: fixed;
+    left: 0; right: 0; top: 0; bottom: 0;
+    height: 100%;
+    z-index:-100;
+    background: linear-gradient(to bottom, #2A0134 0%, #8A2BE2 100%);
+}
+
+#header {
+    text-align: center;
+    border: 5px solid black;
+    color: #CC00FF;
+    padding: 10px 0;
+    border-bottom-width: 2px;
+    border-top-width: 2px;
+    background: url(https://media-upload.net/uploads/xz89NgSbynav.gif);
+    background-size: cover;
+    background-position: center, center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    letter-spacing: 10px;
+}
+
+#navAndHeader{
+    position: fixed;
+    top: -22px;
+    right: 0px;
+    left: 0;
+    margin: 0;
+    z-index: 100;
+    margin-bottom: 30px;
+}
+
+#pageContent {
+    position: relative;
+    overflow: auto;
+    top: 110px;
+    transform: translateX(100%);
+    animation: fadeIn 0.7s ease-in-out forwards;
+    margin-right: 1%;
+    word-break: keep-all;
+}
+
+.pageText {
+    margin-top: 20px;
+    font-size: 40px;
+    right: 0;
+    left: 0;
+    position: relative;
+    direction: ltr;
+    text-align: left;
+}
+
+@keyframes fadeIn{
+    from{
+        transform: translateX(-2%);
+        opacity:0;
+    }
+    to {
+        transform: translateX(1%);
+        opacity: 1;
+    }
+}
+
+.navSpace {
+    margin-right: 100px;
+}
+
+#hr{
+    width:70%;
+    margin-left:0px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top:-23px;
+    display: flex;
+    justify-content: center; /* Center-align the content horizontally */
+    background-color: #483D8B;
+    border: 3px solid black;
+}
+
+.currentSite {
+    color: white;
+    font-weight:bold;
+}
+
+.nav {
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 7px 13px;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.nav:hover {
+    color: white;
+    background-color: mediumslateblue;
+    border-radius: 10px;
+    transition: background-color 0.7s ease;
+}
+
+.rights {
+    position: relative;
+    color: white;
+    background-color: #483D8B;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: -95px;
+    padding: 5px;
+    border: 3px dashed black
+}
+
+#welcome {
+    position: relative;
+    margin-top: 20px;
+    z-index: 5;
+    text-align: center;
+    font-weight: bold;
+    right: 0;
+    left: 0;
+    font-size: 47px;
+    color: transparent;
+    animation: rainbow 1.9s linear infinite;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+@keyframes rainbow {
+    0% {
+        color: red;
+    }
+
+    14% {
+        color: orange;
+    }
+
+    28% {
+        color: yellow;
+    }
+
+    42% {
+        color: green;
+    }
+
+    57% {
+        color: steelblue;
+    }
+
+    71% {
+        color: indigo;
+    }
+
+    85% {
+        color: violet;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+.homePageSpace {
+        height: 50%;
+        border: 5px solid black;
+        right: 0;
+        left: 0;
+        top: 0;
+}
+
+#drakesFirstImage {
+        float: right;
+        width: 350px;
+        height: 350px;
+        margin: 2% 5% 1% 2%;
+        border: 3px solid black;
+    }
+
+#drakesSecondImage {
+        float: left;
+        width: 400px;
+        height: auto;
+        margin: 2% 3% 7% 2%;
+        border: 3px solid black;
+    }
+
+td, th {
+    border: 3px solid black;
+    padding:10px
+}
+
+td{
+    text-align:left;
+}
+
+th {
+    text-align: center;
+    padding: 5px 5px 5px 10px;
+}
+
+.albumTitle{
+    vertical-align:text-top;
+    width:27%;
+}
+
+table {
+    width: 90%;
+    justify-content: center;
+    margin-left: 50%;
+    border-collapse: collapse;
+    transform: translateX(-50%);
+}
+
+#albumSection{
+    text-align:left;
+    padding:5px 9px;
+    color:white;
+    text-decoration:none;
+    font-size:40px;
+    width:auto;
+}
+
+#albumSection:hover {
+    background-color: mediumslateblue;
+    transition: background-color 0.5s ease-in-out;
+    border-radius:10px;
+}
+
+#albumPic {
+    height: 70%;
+    width: 70%;
+    margin-top:10px;
+    border: 2px solid darkblue;
+    
+}
+
+.albumList{
+    list-style-type:circle;
+}
+
+.backUp{
+    color:white;
+}
+
+.homeLinks{
+    color:lightblue;
+    text-decoration:underline;
+}
